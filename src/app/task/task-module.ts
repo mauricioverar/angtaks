@@ -7,10 +7,8 @@ import { HomeComponent } from './pages/home/home';
 
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-  ],
   imports: [
+    HomeComponent,
     CommonModule,
     ReactiveFormsModule,
     TaskForm,

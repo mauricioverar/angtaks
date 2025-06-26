@@ -1,1 +1,14 @@
-<p>home works!</p>
+<section class="home">
+  <h1>Administrador de Tareas</h1>
+
+  <!-- Formulario para agregar tareas -->
+  <app-task-form (taskCreated)="onTaskCreated($event)"></app-task-form>
+
+  <!-- Lista de tareas (se mostrará cuando haya al menos una tarea) -->
+  <app-task-list
+    *ngIf="tasks.length > 0"
+    [tasks]="tasks"
+    (taskToggled)="onTaskToggled($event)"
+    (taskDeleted)="onTaskDeleted($event)"
+  ></app-task-list>
+</section>
