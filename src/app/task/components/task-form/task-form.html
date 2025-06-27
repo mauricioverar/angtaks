@@ -1,10 +1,16 @@
 <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
-  <input formControlName="title" placeholder="Título" required />
-  <textarea formControlName="description" placeholder="Descripción"></textarea>
-  <select formControlName="priority">
+  <label for="title">Título</label>
+  <input id="title" formControlName="title" placeholder="Título" required />
+
+  <label for="description">Descripción</label>
+  <textarea id="description" formControlName="description" placeholder="Descripción"></textarea>
+
+  <label for="priority">Prioridad</label>
+  <select id="priority" formControlName="priority">
     <option value="baja">Baja</option>
     <option value="media">Media</option>
     <option value="alta">Alta</option>
   </select>
+
   <button type="submit" [disabled]="taskForm.invalid">Agregar tarea</button>
 </form>

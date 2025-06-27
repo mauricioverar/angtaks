@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.scss'],
 })
 export class App {
-  protected title = 'administrador-tareas';
+  protected title = 'Administrador-tareas';
 }
