@@ -22,7 +22,7 @@ Una aplicación de tareas desarrollada con **Angular standalone components**, ce
 ## 📦 Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/angular-task-manager.git
+git clone https://github.com/mauricioverar/angular-task-manager.git
 cd angular-task-manager
 npm install
 ng serve
