@@ -4,6 +4,12 @@ form {
   gap: 1rem;
 }
 
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 button {
   display: block;
   margin-top: 1rem;
@@ -13,4 +19,10 @@ button {
   border: 2px solid red;
   cursor: pointer;
   font-weight: bold;
+}
+
+input, textarea, select, button {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
 }

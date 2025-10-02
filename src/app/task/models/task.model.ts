@@ -4,4 +4,5 @@ export interface Task {
   description: string;
   priority: 'baja' | 'media' | 'alta';
   completed: boolean;
+  showDescription?: boolean;
 }

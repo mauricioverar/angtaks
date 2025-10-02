@@ -11,6 +11,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './task-form.scss',
 })
 export class TaskForm {
+  title: string = '';
+  description: string = '';
+  priority: 'baja' | 'media' | 'alta' = 'media';
+
   @Output() taskCreated = new EventEmitter<Task>();
 
   taskForm: FormGroup;

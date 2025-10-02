@@ -11,6 +11,19 @@ import { Task } from '../../models/task.model';
 })
 export class TaskList {
   @Input() tasks: Task[] = [];
+
+  toggleDescription(task: Task) {
+    task.showDescription = !task.showDescription;
+  }
+
+  ngOnChanges() {
+    this.tasks.forEach((task) => {
+      if (task.showDescription === undefined) {
+        task.showDescription = false;
+      }
+    });
+  }
+
   @Output() taskToggled = new EventEmitter<number>();
   @Output() taskDeleted = new EventEmitter<number>();
 
